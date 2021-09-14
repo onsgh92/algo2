@@ -1,0 +1,30 @@
+ALGORITHM distinct
+VAR
+
+   htab1 : HASH_TABLE<INTEGER,INTEGER>;  
+   htab2 : HASH_TABLE<INTEGER,INTEGER>;
+   htab3 : HASH_TABLE<INTEGER,INTEGER>;
+
+
+sum:INTEGER;
+i,j,n,m,y,l,x:INTEGER;
+sum:=0;
+
+BEGIN
+   FOR i FROM 1 TO n STEP 1  DO
+   x:=tab1[i]
+   FOR j FROM 1 TO m STEP 1 DO
+    FOR y FROM 1 TO l STEP 1 DO
+       IF (x=tab2[j]) then  
+            tab3[y]:=x
+       END_FOR
+     
+           sum:=sum+x
+       END_IF
+   END_FOR
+   END_FOR
+Write(tab3[y])
+Write(sum)
+
+
+END
